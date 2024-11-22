@@ -25,7 +25,7 @@ const NavBar = () => {
         <Link href={"/"}>
           <MdRealEstateAgent color="white" size={42} />
         </Link>
-        <Links className=" gap-4 text-white hidden md:flex font-bold tracking-wide" />
+        <Links className="  text-white hidden md:flex font-bold tracking-wide gap-8" />
         <MobileMenu />
       </div>
     </div>

@@ -1,3 +1,5 @@
+import Header from "./components/Hero";
+
 export default function Home() {
-  return <p> hi </p>;
+  return <Header />;
 }
