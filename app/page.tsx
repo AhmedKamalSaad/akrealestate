@@ -1,5 +1,10 @@
-import Header from "./components/Hero";
+import { BuyRent, Hero } from "./components";
 
 export default function Home() {
-  return <Header />;
+  return (
+    <>
+      <Hero />
+      <BuyRent />
+    </>
+  );
 }
