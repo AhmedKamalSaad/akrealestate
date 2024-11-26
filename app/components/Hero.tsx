@@ -12,8 +12,8 @@ const Hero = () => {
         <p className="text-base md:text-lg lg:text-xl  text-slate-400/75 text-center mb-8 tracking-widest">
           EXCLUSIVELY BY AK
         </p>
-        <Button className="bg-red-700 hover:bg-red-500 font-bold py-1 md:py-3 lg:py-5  px-5 md:px-7 lg:px-10 tracking-wide mx-auto text-sm md:text-base lg:text-lg">
-          <Link href={"/projects"}>Explore</Link>
+        <Button className="rounded-none transition-colors ease-in-out bg-red-700 hover:bg-red-500 font-bold py-3 md:py-5  px-7 md:px-10  tracking-wide mx-auto text-base md:text-lg">
+          <Link href={"/properties"}>Explore</Link>
         </Button>
       </div>
     </section>

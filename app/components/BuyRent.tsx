@@ -39,8 +39,8 @@ export const BuyRentDiv = ({ bgColor, bgImg, href, text }: props) => {
     >
       <div className={`absolute w-full h-full ${bgColor}`}></div>
       <Link
-        href={`/projects/${href}`}
-        className="z-10 text-5xl md:text-6xl lg:text-7xl font-bold tracking-wide hover:text-red-700"
+        href={`/properties/${href}`}
+        className="z-10 text-5xl md:text-6xl lg:text-7xl font-bold tracking-wide hover:text-red-700 transition-colors ease-in-out"
       >
         {text}
       </Link>

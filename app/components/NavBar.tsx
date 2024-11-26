@@ -20,12 +20,12 @@ import { usePathname } from "next/navigation";
 
 const NavBar = () => {
   return (
-    <div className="  bg-slate-900">
-      <div className="flex justify-between items-center h-20 max-w-screen-2xl mx-auto px-4 ">
+    <div className="bg-slate-900 font-roboto">
+      <div className="flex justify-between items-center h-20 max-w-screen-2xl mx-auto px-4">
         <Link href={"/"}>
           <MdRealEstateAgent color="white" size={42} />
         </Link>
-        <Links className="  text-white hidden md:flex font-bold tracking-wide gap-8" />
+        <Links className=" text-white/100 hidden md:flex font-light tracking-wide gap-8" />
         <MobileMenu />
       </div>
     </div>
@@ -43,17 +43,17 @@ export const Links = ({ className }: { className?: string }) => {
       <DropdownMenu>
         <DropdownMenuTrigger
           className={`${
-            currentPath.includes("/projects")
+            currentPath.includes("/properties")
               ? "hover:text-red-600 text-red-700"
               : "hover:text-red-600 "
           }`}
         >
-          Projects
+          Properties
         </DropdownMenuTrigger>
         <DropdownMenuContent className="bg-slate-900  p-4 grid border gap-2 text-left border-white">
-          <ActiveLink href={"/projects"}>All</ActiveLink>
-          <ActiveLink href={"/projects/buy"}>Buy</ActiveLink>
-          <ActiveLink href={"/projects/rent"}>Rent</ActiveLink>
+          <ActiveLink href={"/properties"}>All</ActiveLink>
+          <ActiveLink href={"/properties/buy"}>Buy</ActiveLink>
+          <ActiveLink href={"/properties/rent"}>Rent</ActiveLink>
         </DropdownMenuContent>
       </DropdownMenu>
 
@@ -76,7 +76,7 @@ export const MobileMenu = () => {
             asChild
             className="gap-8 grid font-bold text-lg text-white"
           >
-            <Links className="tracking-wide"/>
+            <Links className="tracking-wide" />
           </SheetDescription>
         </SheetHeader>
       </SheetContent>

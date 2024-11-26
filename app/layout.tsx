@@ -2,15 +2,21 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { NavBar } from "./components";
-import { Oswald } from "next/font/google";
+import { Oswald,Roboto } from "next/font/google";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const oswald = Oswald({
-  subsets:['latin'],
+  subsets: ["latin"],
   display: "swap",
+});
+const roboto = Roboto({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto",
+  weight: ["100", "300", "400", "500", "700", "900"],
 });
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
@@ -31,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${oswald.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${oswald.className} ${geistSans.variable} ${geistMono.variable} ${roboto.variable}  antialiased`}
       >
         <NavBar />
         {children}

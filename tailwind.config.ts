@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        roboto: ['var(--font-roboto)'],
+      },
       backgroundImage: {
         hero: "url('/hero_img.png')",
         buy: "url('/bailey-anselme-Bkp3gLygyeA-unsplash.jpg')",
