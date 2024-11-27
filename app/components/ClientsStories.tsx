@@ -16,11 +16,11 @@ const ClientsStories = () => {
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
   return (
-    <section className="mx-auto pb-4 mt-9">
+    <section className="mx-auto pb-4 mt-16">
       <h1 className="tracking-widest text-xl text-black font-thin lg:text-2xl mb-8 text-center ">
       CLIENTS STORIES
       </h1>
-      <div className="w-[90%] mx-auto bg-slate-900">
+      <div className="w-[95%] mx-auto bg-slate-900">
         <Carousel
           className="w-3/4 max-w-screen-2xl mx-auto"
           plugins={[plugin.current]}

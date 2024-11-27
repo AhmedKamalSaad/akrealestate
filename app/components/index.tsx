@@ -1,3 +1,7 @@
+import { IoCallOutline, IoLocationOutline } from "react-icons/io5";
+import { AiOutlineMail } from "react-icons/ai";
+import { ReactNode } from "react";
+
 export { default as Hero } from "@/app/components/Hero";
 export { default as BuyRent } from "@/app/components/BuyRent";
 export { default as NavBar } from "@/app/components/NavBar";
@@ -72,5 +76,30 @@ export const stories = [
     writer: "The Johnson Family",
     story:
       "We had a very specific vision for our dream home, and Ak went above and beyond to find it. They were patient, attentive, and always had our best interests at heart. Now we’re living in the home we’ve always dreamed of, thanks to their expertise!",
+  },
+];
+export const contact: {
+  icon: ReactNode;
+  bold: string;
+  text1: string;
+  text2: string;
+}[] = [
+  {
+    icon: <IoCallOutline color="red" size={60} />,
+    bold: "Call Us",
+    text1: "Free Calls",
+    text2: "1-800-000-000",
+  },
+  {
+    icon: <IoLocationOutline color="red" size={60} />,
+    bold: "Find Us",
+    text1: "500 Terry Francine St.",
+    text2: "San Francisco, CA 94158",
+  },
+  {
+    icon: <AiOutlineMail color="red" size={60} />,
+    bold: "Email Us",
+    text1: "Direct Email",
+    text2: "info@mysite.com",
   },
 ];
