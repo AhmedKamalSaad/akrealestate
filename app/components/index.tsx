@@ -8,6 +8,10 @@ export { default as NavBar } from "@/app/components/NavBar";
 export { default as Rent } from "@/app/components/Rent";
 export { default as Sale } from "@/app/components/Sale";
 export { default as ClientsStories } from "@/app/components/ClientsStories";
+export { default as Email } from "@/app/components/Email";
+export { default as Footer } from "@/app/components/Footer";
+export { default as TeamCard } from "@/app/components/TeamCard";
+export { default as MainPages } from "@/app/components/MainPages";
 
 export const Sales = [
   {
@@ -101,5 +105,31 @@ export const contact: {
     bold: "Email Us",
     text1: "Direct Email",
     text2: "info@mysite.com",
+  },
+];
+export const realtors = [
+  {
+    name: "Gregory Jems",
+    img: "/one.avif",
+  },
+  {
+    name: "Britney Bails",
+    img: "/two.avif",
+  },
+  {
+    name: "Gerry Grossman",
+    img: "/three.avif",
+  },
+  {
+    name: "Don White",
+    img: "/four.avif",
+  },
+  {
+    name: "Brenda Rogers",
+    img: "/five.avif",
+  },
+  {
+    name: "Mike Helman",
+    img: "/six.avif",
   },
 ];

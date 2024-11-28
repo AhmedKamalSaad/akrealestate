@@ -50,7 +50,7 @@ export const Links = ({ className }: { className?: string }) => {
         >
           Properties
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="bg-slate-900  p-4 grid border gap-2 text-left border-white">
+        <DropdownMenuContent className="bg-slate-900  p-4 grid border gap-2 text-left border-white z-40">
           <ActiveLink href={"/properties"}>All</ActiveLink>
           <ActiveLink href={"/properties/buy"}>Buy</ActiveLink>
           <ActiveLink href={"/properties/rent"}>Rent</ActiveLink>

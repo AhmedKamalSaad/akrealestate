@@ -1,11 +1,19 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
   return (
-    <section className="flex justify-center items-center  mx-auto  bg-hero bg-cover h-[70vh] bg-center ">
-      <div className="grid justify-center items-center">
+    <section className="h-[70vh] relative flex items-center justify-center mx-auto">
+      <Image
+        src={"/hero_img.png"}
+        alt="hero"
+        priority
+        fill
+        className="w-full h-full object-cover object-center "
+      />
+      <div className="grid justify-center items-center absolute">
         <h1 className=" text-white/90 text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 text-nowrap">
           New Properties
         </h1>
