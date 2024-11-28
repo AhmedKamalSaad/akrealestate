@@ -1,6 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import { BuyRent, ClientsStories, Hero, Rent, Sale } from "./components";
 import ContactSection from "./components/ContactSection";
+import { Email } from "./components/Email";
 export default function Home() {
   return (
     <>
@@ -11,6 +12,7 @@ export default function Home() {
       <Rent />
       <ClientsStories />
       <ContactSection />
+      <Email/>
     </>
   );
 }
