@@ -69,7 +69,7 @@ export const MobileMenu = () => {
       <SheetTrigger className="md:hidden">
         <IoMenuOutline color="white" size={23} className="cursor-pointer " />
       </SheetTrigger>
-      <SheetContent className="bg-slate-900 text-white border-0 grid justify-center items-center font-bold md:hidden">
+      <SheetContent className="bg-slate-900 text-white border-0 grid justify-center items-center font-bold md:hidden font-roboto">
         <SheetHeader>
           <SheetTitle className="hidden">Menu</SheetTitle>
           <SheetDescription

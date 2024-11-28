@@ -59,14 +59,14 @@ export function Email() {
   }
 
   return (
-    <section className="w-full bg-slate-900 text-white py-5 px-5 ">
+    <section className="w-full bg-slate-700 text-white py-5 px-5 mt-20">
       <h1 className="tracking-widest text-center text-xl font-thin lg:text-2xl mb-9 mt-5">
         CONTACT US
       </h1>
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="max-w-xl space-y-8 mx-auto"
+          className="max-w-3xl space-y-8 mx-auto"
         >
           <div className="flex justify-between gap-5 w-full">
             <FormField
