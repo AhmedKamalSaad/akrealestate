@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <BuyRent />
+        <BuyRent />
       <Sale />
       <Separator className="w-[85%] mx-auto my-20 h-[2px]" />
       <Rent />

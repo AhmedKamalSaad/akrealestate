@@ -1,6 +1,4 @@
 "use client";
-import React from "react";
-import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -9,6 +7,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import React from "react";
 import { stories } from ".";
 
 const ClientsStories = () => {

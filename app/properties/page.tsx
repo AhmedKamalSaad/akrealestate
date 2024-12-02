@@ -1,5 +1,5 @@
 import React from "react";
-import { MainPages, Sales } from "../components";
+import { MainPages, Properties } from "../components";
 import Card from "../components/Card";
 
 const page = () => {
@@ -7,20 +7,21 @@ const page = () => {
     <MainPages
       small="OUR EXCLUSIVE PROPERTIES"
       big="All Properties"
-      bgImg="/project_img_1.jpg"
+      bgImg="/project_img_22.jpg"
     >
-      {Sales.map((s) => (
+      {Properties.map((s) => (
         <Card
           baths={s.baths}
           beds={s.beds}
           city={s.city}
           img={s.img}
-          imgText="Buy"
+          imgText={s.imgText}
           levels={s.levels}
           location={s.location}
           price={s.price}
           sqft={s.sqft}
           key={s.location}
+          id={s.id}
         />
       ))}
     </MainPages>

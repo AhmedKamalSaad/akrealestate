@@ -1,22 +1,22 @@
 "use client";
-import Link from "next/link";
-import { MdRealEstateAgent } from "react-icons/md";
-import ActiveLink from "./ActiveLink";
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-} from "@radix-ui/react-dropdown-menu";
-import { IoMenuOutline } from "react-icons/io5";
 import {
   Sheet,
-  SheetTrigger,
   SheetContent,
-  SheetHeader,
   SheetDescription,
+  SheetHeader,
   SheetTitle,
+  SheetTrigger,
 } from "@/components/ui/sheet";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuTrigger,
+} from "@radix-ui/react-dropdown-menu";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { IoMenuOutline } from "react-icons/io5";
+import { MdRealEstateAgent } from "react-icons/md";
+import ActiveLink from "./ActiveLink";
 
 const NavBar = () => {
   return (

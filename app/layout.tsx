@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Email, Footer, NavBar } from "./components";
-import { Oswald,Roboto } from "next/font/google";
-import { Toaster } from "@/components/ui/toaster"
+import { Oswald, Roboto } from "next/font/google";
+import { Toaster } from "@/components/ui/toaster";
+import { ViewTransitions } from "next-view-transitions";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -37,17 +38,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${oswald.className} ${geistSans.variable} ${geistMono.variable} ${roboto.variable}  antialiased`}
-      >
-        <NavBar />
-        {children}
-        <Email/>
-        <Footer/>
-        <Toaster />
-
-      </body>
-    </html>
+    <ViewTransitions>
+      <html lang="en">
+        <body
+          className={`${oswald.className} ${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased m-0 p-0 `}
+        >
+          <NavBar />
+          {children}
+          <Email />
+          <Footer />
+          <Toaster />
+        </body>
+      </html>
+    </ViewTransitions>
   );
 }

@@ -1,9 +1,8 @@
-import React from "react";
-import { Sales } from ".";
+import { saleArray } from ".";
 import NewProperties from "./NewProperties";
 
 const Sale = () => {
-  return <NewProperties properties={Sales} text="Sale" type="BUY"/>;
+  return <NewProperties properties={saleArray} text="Sale" />;
 };
 
 export default Sale;

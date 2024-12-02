@@ -1,5 +1,4 @@
-import Link from "next/link";
-import React from "react";
+import { Link } from 'next-view-transitions'
 
 const BuyRent = () => {
   return (
@@ -7,21 +6,21 @@ const BuyRent = () => {
       <p className="tracking-widest text-xl text-black font-thin lg:text-2xl mt-16 mb-5 ">
         WHAT ARE YOU LOOKING FOR?
       </p>
-      <div className=" w-full h-[300px] md:h-[500px] mb-10 flex flex-col md:flex-row text-white">
-        <BuyRentDiv
-          bgImg="bg-buy"
-          bgColor="bg-blue-800/55"
-          href="buy"
-          text="Buy"
-        />
-        <BuyRentDiv
-          bgImg="bg-rent"
-          bgColor="bg-red-400/55"
-          href="rent"
-          text="Rent"
-        />
-      </div>
-    </section>
+        <div className=" w-full h-[300px] md:h-[500px] mb-10 flex flex-col md:flex-row text-white">
+          <BuyRentDiv
+            bgImg="bg-buy"
+            bgColor="bg-blue-800/55"
+            href="buy"
+            text="Buy"
+          />
+          <BuyRentDiv
+            bgImg="bg-rent"
+            bgColor="bg-red-400/55"
+            href="rent"
+            text="Rent"
+          />
+        </div>
+          </section>
   );
 };
 

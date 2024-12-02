@@ -1,12 +1,11 @@
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import { Link } from 'next-view-transitions'
 import { FaStairs } from "react-icons/fa6";
 import { LiaBathSolid, LiaBedSolid, LiaSquare } from "react-icons/lia";
 export interface card {
   img: string;
-  imgText?: string;
+  imgText: string;
   location: string;
   city: string;
   price: string;
@@ -14,6 +13,7 @@ export interface card {
   beds: number;
   levels: number;
   sqft: number;
+  id: number;
 }
 const Card = ({
   beds,
@@ -25,6 +25,7 @@ const Card = ({
   location,
   price,
   sqft,
+  id,
 }: card) => {
   return (
     <div className="flex flex-col max-w-[350px] h-[500px] border shadow-lg ">
@@ -33,7 +34,7 @@ const Card = ({
           {imgText}
         </div>
         <Image
-          className="w-full h-full object-fill"
+          className="w-full h-[200px] object-fill"
           src={img}
           alt="img"
           width={500}
@@ -42,7 +43,10 @@ const Card = ({
       </div>
       <div className="px-6 flex flex-col justify-between h-full pt-8 pb-4">
         <div className="leading-9 text-left ">
-          <Link href={`/properties/${location}`} className="font-bold text-2xl  hover:text-red-700 transition-colors ease-in-out">
+          <Link
+            href={`/properties/${id}`}
+            className="font-bold text-2xl  hover:text-red-700 transition-colors ease-in-out"
+          >
             {location}
           </Link>
           <p className="text-slate-800 font-thin">{city}</p>
