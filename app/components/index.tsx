@@ -5,6 +5,7 @@ export { default as BuyRent } from "@/app/components/BuyRent";
 export { default as ClientsStories } from "@/app/components/ClientsStories";
 export { default as Email } from "@/app/components/Email";
 export { default as Footer } from "@/app/components/Footer";
+export { default as GridDiv } from "@/app/components/GridDiv";
 export { default as Hero } from "@/app/components/Hero";
 export { default as MainPages } from "@/app/components/MainPages";
 export { default as NavBar } from "@/app/components/NavBar";
@@ -548,4 +549,3 @@ export const Properties = [
 ];
 export const saleArray = Properties.filter((s) => s.imgText === "BUY");
 export const rentArray = Properties.filter((s) => s.imgText === "RENT");
-

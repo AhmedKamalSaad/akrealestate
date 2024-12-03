@@ -23,9 +23,7 @@ const MainPages = ({ bgImg, big, children, small }: props) => {
         </div>
       </div>
       <section className="md:px-10 pb-5 mt-10 flex justify-center items-center w-full max-w-screen-2xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 grid-flow-dense	">
           {children}
-        </div>
       </section>
     </div>
   );
