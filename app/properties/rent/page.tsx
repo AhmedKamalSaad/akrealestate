@@ -1,5 +1,6 @@
 import { MainPages, rentArray, GridDiv } from "@/app/components";
 import Card from "@/app/components/Card";
+import { Metadata } from "next";
 
 const page = () => {
   return (
@@ -30,3 +31,7 @@ const page = () => {
 };
 
 export default page;
+export const metadata: Metadata = {
+  title: "Rent",
+  description: "AK realestate website",
+};

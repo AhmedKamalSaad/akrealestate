@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { MainPages } from "../components";
 
 const page = () => {
@@ -20,3 +21,8 @@ const page = () => {
 };
 
 export default page;
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "AK realestate website",
+};

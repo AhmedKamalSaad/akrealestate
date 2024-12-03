@@ -6,6 +6,7 @@ import { SlCalender } from "react-icons/sl";
 
 import { IoLocationOutline } from "react-icons/io5";
 import { LiaBathSolid, LiaBedSolid, LiaSquare } from "react-icons/lia";
+import { Metadata } from "next";
 
 const page = async ({ params }: { params: Promise<{ id: string }> }) => {
   const id = (await params).id;
@@ -126,4 +127,8 @@ export const PropertyDiv = ({
       <p className="font-bold text-lg text-rose-800">{value}</p>
     </div>
   );
+};
+export const metadata: Metadata = {
+  title: 'Property',
+  description: "AK realestate website",
 };

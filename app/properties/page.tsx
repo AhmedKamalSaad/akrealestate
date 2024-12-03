@@ -1,6 +1,7 @@
 import React from "react";
 import { GridDiv, MainPages, Properties } from "../components";
 import Card from "../components/Card";
+import { Metadata } from "next";
 
 const page = () => {
   return (
@@ -31,3 +32,7 @@ const page = () => {
 };
 
 export default page;
+export const metadata: Metadata = {
+  title: "Properties",
+  description: "AK realestate website",
+};

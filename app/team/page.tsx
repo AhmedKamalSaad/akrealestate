@@ -1,5 +1,6 @@
 import React from "react";
 import { GridDiv, MainPages, realtors, TeamCard } from "../components";
+import { Metadata } from "next";
 
 const page = () => {
   return (
@@ -14,3 +15,7 @@ const page = () => {
 };
 
 export default page;
+export const metadata: Metadata = {
+  title: "Team",
+  description: "AK realestate website",
+};
