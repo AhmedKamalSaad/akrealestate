@@ -3,7 +3,6 @@ import Image from "next/image";
 import React, { ReactNode } from "react";
 import { FaStairs } from "react-icons/fa6";
 import { SlCalender } from "react-icons/sl";
-
 import { IoLocationOutline } from "react-icons/io5";
 import { LiaBathSolid, LiaBedSolid, LiaSquare } from "react-icons/lia";
 import { Metadata } from "next";
@@ -111,7 +110,7 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
 
 export default page;
 
-export const PropertyDiv = ({
+const PropertyDiv = ({
   text,
   icon,
   value,
@@ -129,6 +128,6 @@ export const PropertyDiv = ({
   );
 };
 export const metadata: Metadata = {
-  title: 'Property',
+  title: "Property",
   description: "AK realestate website",
 };

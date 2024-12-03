@@ -34,7 +34,7 @@ const NavBar = () => {
 
 export default NavBar;
 
-export const Links = ({ className }: { className?: string }) => {
+ const Links = ({ className }: { className?: string }) => {
   const currentPath = usePathname();
 
   return (
@@ -63,7 +63,7 @@ export const Links = ({ className }: { className?: string }) => {
   );
 };
 
-export const MobileMenu = () => {
+ const MobileMenu = () => {
   return (
     <Sheet>
       <SheetTrigger className="md:hidden">

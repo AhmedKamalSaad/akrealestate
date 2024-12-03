@@ -30,7 +30,7 @@ const ContactSection = () => {
 
 export default ContactSection;
 
-export const ContactSectionDiv = ({ bold, icon, text1, text2 }: props) => {
+const ContactSectionDiv = ({ bold, icon, text1, text2 }: props) => {
   return (
     <div className="flex flex-col items-center justify-center tracking-wide ">
       {icon}
