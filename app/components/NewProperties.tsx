@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Card, { card } from "./Card";
@@ -7,7 +9,13 @@ interface props {
 }
 const NewProperties = ({ properties, text }: props) => {
   return (
-    <section className="flex flex-col items-center md:px-10 pb-5 mt-10 max-w-screen-2xl mx-auto">
+    <motion.section
+      initial={{ opacity: 0, scale: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1 }}
+      viewport={{once:true}}
+      className="flex flex-col items-center md:px-10 pb-5 mt-10 max-w-screen-2xl mx-auto"
+    >
       <p className="tracking-widest text-xl text-black font-thin lg:text-2xl mb-5  ">
         NEW PROPERTIES
       </p>
@@ -36,7 +44,7 @@ const NewProperties = ({ properties, text }: props) => {
       <Button className=" transition-colors ease-in-out mt-16 bg-red-700 hover:bg-red-500 font-bold py-5  px-10 tracking-wide mx-auto text-lg rounded-none">
         <Link href={"/properties/buy"}>View More</Link>
       </Button>
-    </section>
+    </motion.section>
   );
 };
 

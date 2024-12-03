@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -16,7 +17,12 @@ const ClientsStories = () => {
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
   return (
-    <section className="mx-auto pb-4 mt-16">
+    <motion.section
+    initial={{opacity:0,translateX:"-100%"}} 
+    whileInView={{opacity:1,translateX:0}} 
+    transition={{duration:1}}
+    viewport={{once:true}}
+    className="mx-auto pb-4 mt-16">
       <h1 className="tracking-widest text-xl text-black font-thin lg:text-2xl mb-8 text-center ">
       CLIENTS STORIES
       </h1>
@@ -45,7 +51,7 @@ const ClientsStories = () => {
           <CarouselNext />
         </Carousel>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

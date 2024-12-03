@@ -1,6 +1,6 @@
 import { Separator } from "@/components/ui/separator";
+import { Link } from 'next-view-transitions';
 import Image from "next/image";
-import { Link } from 'next-view-transitions'
 import { FaStairs } from "react-icons/fa6";
 import { LiaBathSolid, LiaBedSolid, LiaSquare } from "react-icons/lia";
 export interface card {

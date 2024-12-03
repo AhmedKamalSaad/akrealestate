@@ -1,30 +1,18 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
-import { Email, Footer, NavBar } from "./components";
-import { Oswald, Roboto } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
+import type { Metadata } from "next";
 import { ViewTransitions } from "next-view-transitions";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
+import { Oswald, Roboto } from "next/font/google";
+import { Email, Footer, NavBar } from "./components";
+import "./globals.css";
 const oswald = Oswald({
   subsets: ["latin"],
   display: "swap",
 });
-const roboto = Roboto({
+export const roboto = Roboto({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-roboto",
   weight: ["100", "300", "400", "500", "700", "900"],
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
 });
 
 export const metadata: Metadata = {
@@ -41,7 +29,7 @@ export default function RootLayout({
     <ViewTransitions>
       <html lang="en">
         <body
-          className={`${oswald.className} ${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased m-0 p-0 `}
+          className={`${oswald.className} ${roboto.variable} antialiased m-0 p-0 `}
         >
           <NavBar />
           {children}
